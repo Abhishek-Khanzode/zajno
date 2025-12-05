@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'sh';
+  src: url('/fonts/sh.woff2');
+}
+
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: sh;
+  /* overflow: auto; */
+  /* -ms-overflow-style: none;
+  scrollbar-width: none; */
+}
+
+
+/* html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;                 
+} */

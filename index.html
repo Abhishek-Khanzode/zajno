@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="module" src="/src/main.js"></script>
+  <link rel="stylesheet" href="/src/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Zajno Digital Studio</title>
+
+  <style>
+    img {
+      opacity: 0;
+    }
+
+    canvas.world {
+      position: fixed !important;
+      transform: none !important;
+    }
+  </style>
+</head>
+
+<body class=" bg-[#EBEBEB] font-sh px-2 ">
+  <div class="main bg-[#EBEBEB] ">
+
+    <h1
+      class="counter fixed w-full h-full flex justify-end items-end text-[#F1F7EE] text-[180px] z-[10000] pointer-events-none">
+      0
+    </h1>
+    <div class="overlay fixed inset-0 w-full h-screen z-[6] flex justify-center pointer-events-none bg-black"></div>
+
+    <canvas class="world fixed top-0 left-0 z-[2]"></canvas>
+
+    <div class="header w-full h-[75vh] relative  ">
+      <div class="nav w-full h-[60px] flex items-start justify-between px-5 py-3 absolute top-0 left-0 z-10">
+        <a href="#" class="text-[11px] font-bold">zajno</a>
+        <a href="#" class="text-[11px] font-bold">digital studio</a>
+        <div class="mid1 flex flex-col gap-[1] leading-4 ml-15">
+          <a href="/" class="text-[11px] font-bold">work</a>
+          <a href="/" class="text-[11px] font-bold">studio</a>
+          <a href="/" class="text-[11px] font-bold">contact</a>
+        </div>
+        <div class="mid2 flex flex-col gap-[1] leading-4">
+          <a href="/" class="text-[11px] font-bold">telegram</a>
+          <a href="/" class="text-[11px] font-bold">instagram</a>
+        </div>
+        <div class="right">
+          <a href="/" class="text-[11px] font-bold">los angeles</a>
+        </div>
+      </div>
+
+      <div class="image w-full h-[480px] absolute top-2 left-0 bg-red">
+        <img src="/images/zajno.png" class="w-full h-full object-cover">
+      </div>
+    </div>
+
+
+    <div class="video w-full h-[90vh]  relative flex items-center justify-center   ">
+      <img src="/images/video.png" class="w-full h-full object-cover object-top   ">
+      <div class=" w-[350px] h-[100px]  text flex items-center justify-center gap-5 absolute   z-2">
+        <svg width="80" height="80">
+          <image href="/images/play.svg" width="80" height="80" />
+        </svg>
+        <h3 class="text-2xl text-white">Watch Showreel</h3>
+      </div>
+    </div>
+
+    <div class="work w-full h-auto relative  ">
+      <div class="part1 flex items-start justify-between mb-30">
+
+        <div class="left w-[700px]  flex items-start justify-between">
+          <h3 class="text-2xl flex items-center justify-center">Work <img src="/images/arrow.png"
+              class="w-[30px] rotation-45"></h3>
+          <p class="text-xl w-[61%]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, saepe! Lorem
+            ipsum dolor sit amet.
+          </p>
+        </div>
+
+        <div class="right">
+          <h3 class="text-2xl">&copy;2015-25</h3>
+        </div>
+
+      </div>
+
+
+      <div class="part2">
+
+        <div class="projects w-full h-auto   flex items-end justify-end flex-col ">
+
+          <div class="project w-[80%] flex items-start justify-between  py-5 border-y-1 border-black ">
+            <div class="left">
+              <h2 class="text-[22px]">01</h2>
+            </div>
+            <div class="mid1 w-[220px] ml-25 leading-6">
+              <h2 class="text-[22px]">Design & development of the website's 3 pages</h2>
+            </div>
+            <div class="mid2 flex items-start flex-col ml-35 leading-6">
+              <h2 class="text-[22px]">Brightmark</h2>
+              <h2 class="text-[22px]">Technology</h2>
+            </div>
+            <div class="right">
+            </div>
+            <img src="/images/work1.avif" class="w-[200px]">
+          </div>
+          <div class="project w-[80%] flex items-start justify-between  py-5 border-y-1 border-black ">
+            <div class="left">
+              <h2 class="text-[22px]">01</h2>
+            </div>
+            <div class="mid1 w-[220px] ml-25 leading-6">
+              <h2 class="text-[22px]">Design & development of the website's 3 pages</h2>
+            </div>
+            <div class="mid2 flex items-start flex-col ml-35 leading-6">
+              <h2 class="text-[22px]">Brightmark</h2>
+              <h2 class="text-[22px]">Technology</h2>
+            </div>
+            <div class="right">
+            </div>
+            <img src="/images/work2.avif" class="w-[200px]">
+          </div>
+          <div class="project w-[80%] flex items-start justify-between  py-5 border-y-1 border-black ">
+            <div class="left">
+              <h2 class="text-[22px]">01</h2>
+            </div>
+            <div class="mid1 w-[220px] ml-25 leading-6">
+              <h2 class="text-[22px]">Design & development of the website's 3 pages</h2>
+            </div>
+            <div class="mid2 flex items-start flex-col ml-35 leading-6">
+              <h2 class="text-[22px]">Brightmark</h2>
+              <h2 class="text-[22px]">Technology</h2>
+            </div>
+            <div class="right">
+            </div>
+            <img src="/images/work3.avif" class="w-[200px]">
+          </div>
+          <div class="project w-[80%] flex items-start justify-between  py-5 border-y-1 border-black ">
+            <div class="left">
+              <h2 class="text-[22px]">01</h2>
+            </div>
+            <div class="mid1 w-[220px] ml-25 leading-6">
+              <h2 class="text-[22px]">Design & development of the website's 3 pages</h2>
+            </div>
+            <div class="mid2 flex items-start flex-col ml-35 leading-6">
+              <h2 class="text-[22px]">Brightmark</h2>
+              <h2 class="text-[22px]">Technology</h2>
+            </div>
+            <div class="right">
+            </div>
+            <img src="/images/work4.avif" class="w-[200px]">
+          </div>
+          <div class="project w-[80%] flex items-start justify-between  py-5 border-y-1 border-black ">
+            <div class="left">
+              <h2 class="text-[22px]">01</h2>
+            </div>
+            <div class="mid1 w-[220px] ml-25 leading-6">
+              <h2 class="text-[22px]">Design & development of the website's 3 pages</h2>
+            </div>
+            <div class="mid2 flex items-start flex-col ml-35 leading-6">
+              <h2 class="text-[22px]">Brightmark</h2>
+              <h2 class="text-[22px]">Technology</h2>
+            </div>
+            <div class="right">
+            </div>
+            <img src="/images/work5.avif" class="w-[200px]">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="studio w-full h-screen relative px-5  ">
+      <div class="part1 mb-15">
+        <div class="left w-[700px]  flex items-start justify-between mt-50">
+          <h3 class="text-2xl flex items-center justify-center">Studio <img src="/images/arrow.png"
+              class="w-[30px] rotation-45"></h3>
+          <p class="text-xl w-[61%]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, saepe! Lorem
+            ipsum dolor sit amet.
+          </p>
+        </div>
+      </div>
+
+      <div class="part2 flex items-start justify-between gap-15 ">
+        <img src="/images/studio-img.avif" class="w-[650px]">
+
+        <div class="text flex items-start justify-center  ">
+          <div class="left w-[200px] border-x-2 border-black px-3">
+            <h3 class="text-2xl mb-5 ">Services:</h3>
+            <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis iure laborum molestias
+              doloremque atque
+              eum, nam rem hic voluptatibus,</p>
+          </div>
+          <div class="right w-[200px] border-x-2 border-black px-3">
+            <h3 class="text-2xl mb-5 ">Stats:</h3>
+            <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis iure laborum molestias
+              doloremque atque
+              eum, nam rem hic voluptatibus,</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="connect w-full h-[90vh] relative overflow-hidden  ">
+      <div class="images w-full flex items-start justify-between mt-10">
+        <img src="/images/connect-img1.avif" class="w-[300px]">
+        <img src="/images/connect-img2.avif" class="w-[200px] mt-25">
+        <img src="/images/connect-img3.avif" class="w-[200px] ">
+        <img src="/images/connect-img4.avif" class="w-[200px] mt-25">
+      </div>
+
+      <div class="text-[790px] font-bold text-red-500 leading-none absolute bottom-[-380px]  ">
+        715<span class="text-[80px] align-top">™</span>
+      </div>
+
+    </div>
+
+    <div class="footer w-full h-[40vh] relative border-y-1 border-black py-10 ">
+      <div class="flex items-start justify-between ">
+        <div class="left">
+          <h3 class="text-4xl">zajno</h3>
+        </div>
+        <div class="right flex items-start justify-between  gap-20 mr-80">
+          <div class="links flex flex-col">
+            <h3 class="text-3xl">Social</h3>
+            <a href="#" class="text-xl">Instagram</a>
+            <a href="#" class="text-xl">Linkedin</a>
+            <a href="#" class="text-xl">Twitter</a>
+          </div>
+          <div class="links flex flex-col">
+            <h3 class="text-3xl">Legal</h3>
+            <a href="#" class="text-xl">privacy policy</a>
+            <a href="#" class="text-xl">terms of service</a>
+            <a href="#" class="text-xl">cookie policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
